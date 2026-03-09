@@ -115,7 +115,7 @@ export function createScheduleTool(ctx: OpenClawPluginToolContext) {
   const tool = {
     name: "agent-cron",
     label: "Agent cron",
-    description: `Manage one-off and scheduled tasks (reminders, jobs, cron, tasks) for this agent. Use this when the \`cron\` tool is not available. Read the \`agent-cron\` skill to learn how to use this tool.`,
+    description: `Manage one-off and scheduled tasks (reminders, jobs, cron, tasks) for this agent. Use this when the \`cron\` tool is not available. The \`agent-cron\` skill explains how to use this tool, you MUST read it before trying to add a job.`,
     parameters: ScheduleToolSchema,
     execute: async (_toolCallId: string, args: Record<string, unknown>) => {
       if (!ctx.agentId?.trim()) {
