@@ -2,6 +2,7 @@
   "id": "agent-cron",
   "name": "Agent cron",
   "description": "Agent-scoped scheduled tasks: list, add, remove, and run cron jobs for this agent only. Always isolated sessions and announce delivery.",
+  "skills": ["./skills"],
   "configSchema": {
     "type": "object",
     "additionalProperties": false,
