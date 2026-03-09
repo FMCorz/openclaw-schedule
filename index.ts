@@ -1,4 +1,4 @@
-import type { OpenClawPluginApi } from "openclaw/plugin-sdk";
+import type { OpenClawPluginApi } from "openclaw/plugin-sdk/core";
 import { createScheduleTool } from "./src/tool.js";
 
 export default function register(api: OpenClawPluginApi) {

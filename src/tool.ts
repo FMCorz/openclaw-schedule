@@ -2,8 +2,8 @@ import {
   callGatewayTool,
   extractDeliveryInfo,
   parseAgentSessionKey,
-  type OpenClawPluginToolContext,
-} from "openclaw/plugin-sdk";
+} from "openclaw/plugin-sdk/core";
+import type { OpenClawPluginToolContext } from 'openclaw/plugin-sdk/lobster';
 import { Type } from "@sinclair/typebox";
 
 const SCHEDULE_ACTIONS = ["list", "add", "remove", "run"] as const;
